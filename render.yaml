@@ -16,7 +16,7 @@ services:
   # Frontend Vite App (Static Site)
   - type: web
     name: ev-agent-frontend
-    runtime: static
+    env: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     envVars:
